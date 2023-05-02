@@ -73,6 +73,9 @@
 
 G_BEGIN_DECLS
 
+// stream-works
+void nice_debug_set_handler(GLogFunc log_handler);
+
 /**
  * nice_debug_enable:
  * @with_stun: Also enable STUN debugging messages
