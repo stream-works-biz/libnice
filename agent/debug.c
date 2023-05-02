@@ -124,6 +124,17 @@ void nice_debug_init (void)
   }
 }
 
+// stream-works
+void nice_debug_set_handler(GLogFunc log_handler)
+{
+    g_log_set_handler (G_LOG_DOMAIN,
+        G_LOG_LEVEL_MASK,
+        log_handler,
+        NULL);
+}
+//
+
+
 #ifndef NDEBUG
 gboolean nice_debug_is_enabled (void)
 {
