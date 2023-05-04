@@ -143,6 +143,8 @@ struct stun_timer_s {
  * of 500ms :  500 * ( 1 + 2 + 1 ) = 2000 ms
  * The timeout doubles at each retransmission, except for the last one.
  */
+// stream-works
+#define STUN_TIMER_DEFAULT_TIMEOUT 250
 #define STUN_TIMER_DEFAULT_TIMEOUT 500
 
 /**
