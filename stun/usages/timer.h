@@ -145,7 +145,7 @@ struct stun_timer_s {
  */
 // stream-works
 #define STUN_TIMER_DEFAULT_TIMEOUT 250
-#define STUN_TIMER_DEFAULT_TIMEOUT 500
+// #define STUN_TIMER_DEFAULT_TIMEOUT 500
 
 /**
  * STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS:
@@ -153,7 +153,9 @@ struct stun_timer_s {
  * The default maximum retransmissions before declaring that the
  * transaction timed out.
  */
-#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 3
+// stream-works
+#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 2
+//#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 3
 
 /**
  * STUN_TIMER_DEFAULT_RELIABLE_TIMEOUT:
