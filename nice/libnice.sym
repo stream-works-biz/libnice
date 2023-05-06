@@ -80,6 +80,7 @@ nice_compatibility_get_type
 nice_component_state_get_type
 nice_component_state_to_string
 nice_component_type_get_type
+nice_debug_set_handler
 nice_debug_disable
 nice_debug_enable
 nice_interfaces_get_if_index_by_addr
