@@ -154,7 +154,8 @@ struct stun_timer_s {
  * transaction timed out.
  */
 // stream-works
-#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 2
+// issue to short
+#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 3
 //#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 3
 
 /**
