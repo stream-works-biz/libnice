@@ -77,7 +77,9 @@
 
 #define DEFAULT_STUN_PORT  3478
 #define DEFAULT_UPNP_TIMEOUT 200  /* milliseconds */
-#define DEFAULT_IDLE_TIMEOUT 5000 /* milliseconds */
+// stream-works
+#define DEFAULT_IDLE_TIMEOUT 2000 /* milliseconds */
+//#define DEFAULT_IDLE_TIMEOUT 5000 /* milliseconds */
 
 #define MAX_TCP_MTU 1400 /* Use 1400 because of VPNs and we assume IEE 802.3 */
 
