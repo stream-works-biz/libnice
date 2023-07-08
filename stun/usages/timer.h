@@ -156,7 +156,7 @@ struct stun_timer_s {
  */
 // stream-works
 // issue to short
-#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 5
+#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 3
 //#define STUN_TIMER_DEFAULT_MAX_RETRANSMISSIONS 3
 
 /**
