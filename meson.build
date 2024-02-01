@@ -76,6 +76,7 @@ endif
 glib_req_minmax_str = glib_req.split().get(1).underscorify()
 add_project_arguments('-D_GNU_SOURCE',
   '-DHAVE_CONFIG_H',
+  '-DG_DISABLE_ASSERT', '-DG_DISABLE_CHECKS',
   '-DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_' + glib_req_minmax_str,
   '-DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_' + glib_req_minmax_str,
   '-DNICE_VERSION_MAJOR=' + version_major,
