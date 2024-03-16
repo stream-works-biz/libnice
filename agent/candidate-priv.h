@@ -52,6 +52,11 @@ G_BEGIN_DECLS
 
 /* Constants for determining candidate priorities */
 #define NICE_CANDIDATE_TYPE_PREF_HOST                 120
+
+/* streamworks
+stun attribute priority always provide High as result always choose mobile network
+NICE_CANDIDATE_TYPE_PREF_PEER_REFLEXIVE 110 -> 65 */
+
 #define NICE_CANDIDATE_TYPE_PREF_PEER_REFLEXIVE       95
 #define NICE_CANDIDATE_TYPE_PREF_NAT_ASSISTED         105
 #define NICE_CANDIDATE_TYPE_PREF_SERVER_REFLEXIVE     100

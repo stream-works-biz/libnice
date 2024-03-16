@@ -1183,8 +1183,8 @@ NiceCandidate *discovery_learn_remote_peer_reflexive_candidate (
   /* if the check didn't contain the PRIORITY attribute, then the priority will
    * be 0, which is invalid... */
 // streamworks
+// stun attribute priority always provide High as result always choose mobile network
 //  if (priority != 0) {
-//    nice_debug ("discovery_learn_remote_peer_reflexive_candidate1 type:%u priority:%u compatibility:%u",candidate->type, candidate->priority,agent->compatibility);
 //   candidate->priority = priority;
 //  } else 
 //
@@ -1200,10 +1200,6 @@ NiceCandidate *discovery_learn_remote_peer_reflexive_candidate (
     candidate->priority = nice_candidate_ice_priority (candidate,
         agent->reliable, FALSE);
   }
-
-    nice_debug ("discovery_learn_remote_peer_reflexive_candidate2 type:%u priority:%u compatibility:%u",candidate->type, candidate->priority,agent->compatibility);
-
-
 
   priv_assign_remote_foundation (agent, candidate);
 
