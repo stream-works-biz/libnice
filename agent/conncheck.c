@@ -1335,10 +1335,16 @@ static guint32 peer_reflexive_candidate_priority (NiceAgent *agent,
 static guint32 stun_request_priority (NiceAgent *agent,
     NiceCandidate *local_candidate)
 {
-  if (local_candidate->type == NICE_CANDIDATE_TYPE_HOST)
-    return peer_reflexive_candidate_priority (agent, local_candidate);
-  else
-    return local_candidate->priority;
+	guint32 priority;
+
+  if (local_candidate->type == NICE_CANDIDATE_TYPE_HOST){
+	priority = peer_reflexive_candidate_priority (agent, local_candidate);
+  } else{
+    priority = local_candidate->priority;
+  }
+    nice_debug ("stun_request_priority type:%u priority:%u", local_candidate->type,priority);
+
+    return priority;
 }
 
 static void ms_ice2_legacy_conncheck_send(StunMessage *msg, NiceSocket *sock,
