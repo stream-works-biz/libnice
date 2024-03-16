@@ -1197,6 +1197,10 @@ NiceCandidate *discovery_learn_remote_peer_reflexive_candidate (
         agent->reliable, FALSE);
   }
 
+    nice_debug ("discovery_learn_remote_peer_reflexive_candidate type:%u priority:%u compatibility:%u",candidate->type, candidate->priority,agent->compatibility);
+
+
+
   priv_assign_remote_foundation (agent, candidate);
 
   if ((agent->compatibility == NICE_COMPATIBILITY_MSN ||
