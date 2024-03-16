@@ -1183,6 +1183,8 @@ NiceCandidate *discovery_learn_remote_peer_reflexive_candidate (
   /* if the check didn't contain the PRIORITY attribute, then the priority will
    * be 0, which is invalid... */
   if (priority != 0) {
+    nice_debug ("discovery_learn_remote_peer_reflexive_candidate1 type:%u priority:%u compatibility:%u",candidate->type, candidate->priority,agent->compatibility);
+
     candidate->priority = priority;
   } else if (agent->compatibility == NICE_COMPATIBILITY_GOOGLE) {
     candidate->priority = nice_candidate_jingle_priority (candidate);
@@ -1197,7 +1199,7 @@ NiceCandidate *discovery_learn_remote_peer_reflexive_candidate (
         agent->reliable, FALSE);
   }
 
-    nice_debug ("discovery_learn_remote_peer_reflexive_candidate type:%u priority:%u compatibility:%u",candidate->type, candidate->priority,agent->compatibility);
+    nice_debug ("discovery_learn_remote_peer_reflexive_candidate2 type:%u priority:%u compatibility:%u",candidate->type, candidate->priority,agent->compatibility);
 
 
 
