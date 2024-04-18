@@ -55,7 +55,7 @@ G_BEGIN_DECLS
 
 /* streamworks
 stun attribute priority always provide High as result always choose mobile network
-NICE_CANDIDATE_TYPE_PREF_PEER_REFLEXIVE 110 -> 65 */
+NICE_CANDIDATE_TYPE_PREF_PEER_REFLEXIVE 110 -> 95 */
 
 #define NICE_CANDIDATE_TYPE_PREF_PEER_REFLEXIVE       95
 #define NICE_CANDIDATE_TYPE_PREF_NAT_ASSISTED         105
